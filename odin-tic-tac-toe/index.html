@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+	<script src="index.js"></script>
+
+    <div id="game-play-container">
+        <div id="player-x">
+            <h3><strong>Player X:</strong><div id="player-x-name-change"></div><strong> Total wins: </strong><div id="player-x-score" type="number"></div></h3>
+        </div>
+        <div id="draws">
+            <h3><strong>Draws: </strong><div id="draws-num" type="number"></div></h3>
+        </div>
+        <div id="player-o">
+            <h3><strong>Player O:</strong><div id="player-o-name-change"></div><strong> Total wins: </strong><div id="player-o-score" type="number"></div></h3>
+        </div>
+    </div>
+    <div id="buttons-container">
+      <form id="player-x-form">
+        <label for="player-x-name">
+        <input id="player-x-name">
+        <button class="btn btn-primary" type="submit" id="player-x-name-button">Enter player X name</button>
+        </label>
+      </form>
+      <button id="restart-match" class="btn btn-warning">Restart Match</button>
+      <form id="player-o-form">
+        <label for="player-o-name">
+        <input id="player-o-name">
+        <button class="btn btn-primary" type="submit" id="player-o-name-button">Enter player O name</button>
+        </label>
+      </form>
+      <button id="restart-game" class="btn btn-danger">New Game</button>
+    </div>
+    <div id="game-board-display">
+        <div id="game-tile-one"></div>
+        <div id="game-tile-two"></div>
+        <div id="game-tile-three"></div>
+        <div id="game-tile-four"></div>
+        <div id="game-tile-five"></div>
+        <div id="game-tile-six"></div>
+        <div id="game-tile-seven"></div>
+        <div id="game-tile-eight"></div>
+        <div id="game-tile-nine"></div>
+    </div>
+  </body>
+</html>
